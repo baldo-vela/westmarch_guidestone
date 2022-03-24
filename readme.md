@@ -6,3 +6,6 @@ https://foundryvtt.com/article/module-development/
 
 https://medium.datadriveninvestor.com/create-a-rails-api-from-scratch-fa81bcba5422
 
+## Resources:
+https://jsonlint.com/
+ For validating JSON files.
