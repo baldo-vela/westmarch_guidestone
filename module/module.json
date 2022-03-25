@@ -2,7 +2,28 @@
     "name": "westmarch-guidestone",
     "title": "Westmarch Guidestone - An FVTT Module",
     "description": "A simple module created as a way of coordinating the actions of Dungeon Masters and their players characters for Westmarches Campaigns with-in Foundry Virtual Tabletop framework.",
-    "authors": "QuantumHeretic",
+    "authors": [
+        {
+            "name": "QuantumHeretic",
+            "email": "QuantumHeretic+GuidestoneDev@gmail.com",
+            "url": "" 
+        },
+        {
+            "name": "Andrew Cuccinello [DJ#1982]",
+            "email": "admin@foundryvtt.com",
+            "url": "https://foundryvtt.com"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "locale/en/config.json"
+        }
+    ],
+    "minimumCoreVersion": "0.5.0",
     "version": "0.0.1",
-    "minimumCoreVersion": "0.5.0"
+    "scripts": [
+        
+    ]
   }
