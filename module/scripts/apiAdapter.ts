@@ -1,6 +1,6 @@
 // ---------- Imports -------------------------------------------------------
-import { Character } from './Character';
-import { 
+import type { Character } from './Character';
+import type { 
     UserRoster, 
     UserSorties,
     UserRoles
@@ -42,10 +42,17 @@ interface ApiResponse {
 }
 
 // ---------- Classes -------------------------------------------------------
+
 class ApiAdapter {
     constructor(baseUrl: string) {
         this.baseUrl = baseUrl;
     }
+    /**
+     * Returns the API fetch 
+     * @param url desitination url string
+     * @param data JSON object to be sent as body
+     * @returns 
+     */
     post(url, data) {
         return fetch(`${this.baseUrl}${url}`, {
             method: 'POST',
@@ -56,7 +63,14 @@ class ApiAdapter {
         }).then(res => res.json());
     }
 }
-
+class UserApiAdapter extends ApiAdapter {
+    constructor(baseUrl: string) {
+        super(baseUrl);
+    }
+    login(data: ApiUserLogin) {
+        return this.post('/user/login', data);
+    }
+}
 // ---------- Executables -------------------------------------------------------
 
 // ---------- Exports -------------------------------------------------------
