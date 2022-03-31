@@ -58,3 +58,6 @@ class ApiAdapter {
 }
 
 // ---------- Executables -------------------------------------------------------
+
+// ---------- Exports -------------------------------------------------------
+export {ApiAdapter, ApiUserLogin, ApiUserResponse, ApiRequestBody, ApiRequestHeader, ApiRequest, ApiResponse};
