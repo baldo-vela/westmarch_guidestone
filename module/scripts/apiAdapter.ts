@@ -1,4 +1,5 @@
 // ---------- Imports -------------------------------------------------------
+// Note: see https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html
 import type { Character } from './Character';
 import type { 
     UserRoster, 
