@@ -1,3 +1,11 @@
+// ---------- Imports -------------------------------------------------------
+import { Character } from './Character';
+import { 
+    UserRoster, 
+    UserSorties,
+    UserRoles
+} from './User';
+
 // ---------- Types -------------------------------------------------------
 interface ApiAdapter {
     baseUrl: string;
@@ -6,16 +14,6 @@ interface ApiAdapter {
 type ApiUserLogin = {
     email: string;
     password: string;
-}
-
-type UserRoster = {
-
-}
-type UserSorties = {
-    
-}
-type UserRoles = {
-
 }
 type ApiUserResponse = {
     id: number;
