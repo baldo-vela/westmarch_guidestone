@@ -75,4 +75,4 @@ class UserApiAdapter extends ApiAdapter {
 // ---------- Executables -------------------------------------------------------
 
 // ---------- Exports -------------------------------------------------------
-export {ApiAdapter, ApiUserLogin, ApiUserResponse, ApiRequestBody, ApiRequestHeader, ApiRequest, ApiResponse};
+export {ApiAdapter, ApiUserLogin, ApiUserResponse, ApiRequestBody, ApiRequestHeader, ApiRequest, ApiResponse, UserApiAdapter};
