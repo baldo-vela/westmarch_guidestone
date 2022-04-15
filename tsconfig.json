@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "types": ["@league-of-foundry-developers/foundry-vtt-types"],
+    "moduleResolution": "node",
+    "strictNullChecks": true,
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Projects */
