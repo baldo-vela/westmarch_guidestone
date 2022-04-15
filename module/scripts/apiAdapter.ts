@@ -50,11 +50,11 @@ class ApiAdapter {
     }
     /**
      * Returns the API fetch 
-     * @param url desitination url string
+     * @param url destination url string
      * @param data JSON object to be sent as body
      * @returns 
      */
-    post(url, data) {
+    post(url: string, data: any) {
         return fetch(`${this.baseUrl}${url}`, {
             method: 'POST',
             headers: {
@@ -75,4 +75,13 @@ class UserApiAdapter extends ApiAdapter {
 // ---------- Executables -------------------------------------------------------
 
 // ---------- Exports -------------------------------------------------------
-export {ApiAdapter, ApiUserLogin, ApiUserResponse, ApiRequestBody, ApiRequestHeader, ApiRequest, ApiResponse, UserApiAdapter};
+export {
+    ApiAdapter, 
+    ApiUserLogin, 
+    ApiUserResponse, 
+    ApiRequestBody, 
+    ApiRequestHeader, 
+    ApiRequest, 
+    ApiResponse, 
+    UserApiAdapter
+};
